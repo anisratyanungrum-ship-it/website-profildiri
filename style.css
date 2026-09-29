@@ -1,0 +1,510 @@
+/* ================================
+   GENERAL
+================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #172033;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    background: rgba(17, 28, 45, 0.97);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #6575ff !important;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 340px;
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20, 35, 60, 0.75),
+            rgba(20, 35, 60, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+        center/cover;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero h4 {
+    color: #e1e5ff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   PROFILE IMAGE
+================================ */
+
+.profile-img {
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ================================
+   SOCIAL MEDIA
+================================ */
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #6575ff;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.btn-primary {
+    background: #5865f2;
+    border-color: #5865f2;
+}
+
+.btn-primary:hover {
+    background: #4652d9;
+}
+
+
+/* ================================
+   SECTION
+================================ */
+
+.section {
+    padding: 70px 0;
+}
+
+.section-light {
+    background: #f7f9fc;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.section-title i {
+    color: #5865f2;
+    margin-right: 12px;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.info-card {
+    border: 1px solid #e1e5ee;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item > i {
+    font-size: 22px;
+    color: #5865f2;
+}
+
+.info-item strong {
+    display: block;
+}
+
+.info-item span {
+    color: #606b7c;
+}
+
+
+/* ================================
+   SKILLS
+================================ */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills .badge {
+    font-size: 15px;
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-weight: 500;
+}
+
+
+/* Warna skill */
+
+.skill-html {
+    background: #ef553b;
+}
+
+.skill-css {
+    background: #2196f3;
+}
+
+.skill-js {
+    background: #f0b932;
+}
+
+.skill-php {
+    background: #7654d9;
+}
+
+.skill-bootstrap {
+    background: #514bc7;
+}
+
+.skill-mysql {
+    background: #18a6a6;
+}
+
+.skill-git {
+    background: #384353;
+}
+
+.skill-canva {
+    background: #eb5a9b;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.card {
+    border: 1px solid #e2e6ef;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.03);
+}
+
+
+/* ================================
+   EDUCATION
+================================ */
+
+.education-card {
+    padding: 10px;
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 35px;
+    padding-bottom: 25px;
+
+    border-left: 2px dashed #d5d9e3;
+}
+
+.timeline-item:last-child {
+    border-left: none;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    left: -7px;
+    top: 4px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #5865f2;
+}
+
+.timeline-item h5 {
+    font-weight: 700;
+}
+
+.timeline-item p {
+    margin-bottom: 5px;
+    color: #6c7484;
+}
+
+.timeline-item small {
+    color: #7d8595;
+}
+
+
+/* ================================
+   EXPERIENCE
+================================ */
+
+.experience-box {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.experience-icon {
+    min-width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef0ff;
+    color: #5865f2;
+
+    font-size: 23px;
+}
+
+.experience-box h5 {
+    font-weight: 700;
+}
+
+.experience-box p {
+    margin-top: 8px;
+    color: #687183;
+}
+
+
+/* ================================
+   CERTIFICATE
+================================ */
+
+.certificate-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.certificate-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #eef0ff;
+
+    color: #5865f2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+.certificate-item h6 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.certificate-item p {
+    margin: 0;
+    color: #70798a;
+}
+
+.certificate-item span {
+    margin-left: auto;
+    color: #70798a;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    padding: 60px 0 20px;
+
+    background: #162235;
+
+    color: white;
+}
+
+.contact h2 {
+    font-weight: 700;
+}
+
+.contact h2 i {
+    color: #6575ff;
+}
+
+.contact p {
+    color: #c2c9d5;
+    line-height: 1.7;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    width: 25px;
+    color: white;
+}
+
+.contact .form-control {
+    margin-bottom: 12px;
+
+    background: transparent;
+
+    border: 1px solid #455268;
+
+    color: white;
+}
+
+.contact .form-control::placeholder {
+    color: #8993a5;
+}
+
+.contact .form-control:focus {
+    background: transparent;
+    color: white;
+    border-color: #6575ff;
+
+    box-shadow: none;
+}
+
+
+/* ================================
+   COPYRIGHT
+================================ */
+
+.copyright {
+    text-align: center;
+
+    margin-top: 50px;
+    padding-top: 20px;
+
+    border-top: 1px solid #344156;
+
+    color: #8993a5;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 991px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social {
+        margin-top: 25px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .certificate-item {
+        align-items: flex-start;
+    }
+
+}
